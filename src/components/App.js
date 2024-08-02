@@ -1,30 +1,10 @@
-import React from "react";
-
-function NavBar() {
-  return (
-    <nav>
-      <a href="#home">I'm a link!</a>
-    </nav>
-  );
-}
-
-function Home() {
-  return (
-    <div id="home">
-      <h1>Home</h1>
-    </div>
-  );
-}
-
-{/* write an <About> component here */}
-
-
+// Example App component
 function App() {
   return (
     <div>
-      <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <nav data-testid="nav">Navigation</nav>
+      <div id="home" data-testid="home">Home</div>
+      <div id="about" data-testid="about">About</div>
     </div>
   );
 }
